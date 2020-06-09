@@ -2,15 +2,15 @@
 <head>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body onload ="showTime()">
+<body>
   <div>
-    <p id="clock"></p>
+    <p id="clock">?</p><span id="am-pm"> A.M.</span>
   </div>
   <br>
   <hr>
   <br>
-  <div id="stop-clock">
-    <button onclick="clearInterval(timeInterval)">Stop time</button>
+  <div id="clock-btns">
+    <button id="action-btn">Start</button>
   </div>
   <script src="myjs.js"></script>
 </body>
