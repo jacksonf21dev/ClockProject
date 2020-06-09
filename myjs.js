@@ -3,7 +3,7 @@ var button = document.getElementById("action-btn");
 var myInterval = -1;
 
 button.addEventListener("click", function(event) {
-if (myInteval == -1) {
+if (myInterval == -1) {
   button.innerHTML="Pause";
   myInterval = setInterval(function () {
   
@@ -24,6 +24,8 @@ if (myInteval == -1) {
   mins = getTime(mins);
   secs = getTime(secs);
 
+  theTime.innerHTML = hours + ":" + mins + ":" + secs; 
+
   function getTime(i) {
     if (i < 10) {
       i = "0" + i;
@@ -38,7 +40,7 @@ if (myInteval == -1) {
     return n;
   } 
   
-  theTime.innerHTML = hours + ":" + mins + ":" + secs; }, 1000); 
+  }, 1000); 
   
   } else {
     clearInterval(myInterval);
