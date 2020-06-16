@@ -23,41 +23,73 @@ body, html {
   overflow-x: scroll;
   position: relative;
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows:2fr 2fr 1fr 2fr 2fr;
+}
+
+.intro {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock-title {
+  text-decoration: underline
 }
 
 .clock-disp {
-  border: 1px solid black;
   padding: 5px;
-  margin:5px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .btns {
-  border: 1px solid black;
   padding: 5px;
-  margin:5px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #clock {
   border: 1px solid black;
+  border-radius: 5px;
   margin: 5px;
+  padding: 2px;
 }
 
 #am-pm {
-  border: 1px solid black;
   margin: 5px;
 }
 
 #start-btn {
   margin: 5px;
+  padding: 5px;
 }
 
 #stop-btn{
   margin: 5px;
+  padding: 5px;
+}
+
+.outtro {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.link-tree {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#count-up {
+  margin: 15px;
+}
+
+#count-down {
+  margin: 15px;
 }
