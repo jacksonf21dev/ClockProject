@@ -11,7 +11,7 @@ function startBtn () {
       var secs = d.getSeconds();
 
       if (hours > 12) {
-        document.getElementById("am-pm").innerHTML = "PM"
+        document.getElementById("am-pm").innerHTML = "P.M."
         hours = hours - 12;
       }
 
